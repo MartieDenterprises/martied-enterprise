@@ -1,6 +1,6 @@
 // ===== CONFIGURATION =====
-        const GITHUB_USERNAME = 'YOURUSERNAME';
-        const GITHUB_REPO = 'YOURREPO';
+        const GITHUB_USERNAME = 'martiedenterprises';
+        const GITHUB_REPO = 'martied-enterprise';
         const GITHUB_BRANCH = 'main';
 
         const BASE_IMAGE_URL = (() => {

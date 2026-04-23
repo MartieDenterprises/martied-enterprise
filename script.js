@@ -10,7 +10,7 @@
         let currentSort = 'default';
 
         // ===== PRODUCT DATA WITH STOCK =====
-        let products = JSON.parse(localStorage.getItem('martied_products')) || [
+        let products = [
             // ===== PAGE 1: HOUSEHOLD KITCHEN ESSENTIALS =====
             { id: 1, name: "Laundry Net", category: "household", price: 1800, bulkPrice: 1500, bulkQty: 12, image: "laundry-net.jpeg", badge: "", description: "Durable mesh net for protecting clothes in the washing machine.", stock: 50, soldToday: 3 },
             { id: 2, name: "Portable Rechargeable Juicer", category: "kitchenware", price: 4500, bulkPrice: 3800, bulkQty: 10, image: "portable-juicer.jpeg", badge: "hot", description: "USB rechargeable mini blender. Perfect for smoothies on the go.", stock: 30, soldToday: 5 },

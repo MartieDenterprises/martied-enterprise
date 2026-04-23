@@ -77,7 +77,25 @@
         </div>
 
         <!-- Categories -->
-        <div class="categories">
+        <div class="category-dropdown-mobile" id="categoryDropdownMobile">
+            <button class="category-dropdown-toggle" onclick="toggleCategoryDropdown()" id="catDropdownToggle">
+                <span id="currentCategoryLabel"><i class="fas fa-th-large"></i> All Categories</span>
+                <i class="fas fa-chevron-down" id="catDropdownArrow"></i>
+            </button>
+            <div class="category-dropdown-menu" id="catDropdownMenu">
+                <button class="category-dropdown-item active" onclick="filterCategoryDropdown('all', this)">All Categories</button>
+                <button class="category-dropdown-item" onclick="filterCategoryDropdown('kitchenware', this)">Kitchenware</button>
+                <button class="category-dropdown-item" onclick="filterCategoryDropdown('household', this)">Household</button>
+                <button class="category-dropdown-item" onclick="filterCategoryDropdown('back2school', this)">Back2School</button>
+                <button class="category-dropdown-item" onclick="filterCategoryDropdown('decor', this)">Decor & Furniture</button>
+                <button class="category-dropdown-item" onclick="filterCategoryDropdown('gadgets', this)">Gadgets</button>
+                <button class="category-dropdown-item" onclick="filterCategoryDropdown('gifts', this)">Gifts</button>
+                <button class="category-dropdown-item" onclick="filterCategoryDropdown('personal', this)">Personal Care</button>
+            </div>
+        </div>
+
+        <!-- Desktop Categories (horizontal) -->
+        <div class="categories-desktop">
             <button class="category-btn active" onclick="filterCategory('all', this)">All</button>
             <button class="category-btn" onclick="filterCategory('kitchenware', this)">Kitchenware</button>
             <button class="category-btn" onclick="filterCategory('household', this)">Household</button>

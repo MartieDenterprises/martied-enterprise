@@ -20,57 +20,57 @@
 
         // ===== PRODUCT DATA WITH STOCK =====
         let products = JSON.parse(localStorage.getItem('martied_products')) || [
-            { id: 1, name: "Air Fryer", category: "kitchenware", price: 25000, bulkPrice: 22500, bulkQty: 5, image: "airfryer.jpg", badge: "hot", description: "Healthy frying with no oil. Perfect for modern kitchens.", stock: 15, soldToday: 3 },
-            { id: 2, name: "Rice Cooker", category: "kitchenware", price: 18500, bulkPrice: 16650, bulkQty: 10, image: "ricecooker.jpg", badge: "", description: "Automatic cooking function with keep-warm feature.", stock: 8, soldToday: 1 },
-            { id: 3, name: "Pressure Cooker", category: "kitchenware", price: 15000, bulkPrice: 13500, bulkQty: 8, image: "pressurecooker.jpg", badge: "", description: "Fast cooking, saves energy and time.", stock: 12, soldToday: 0 },
-            { id: 4, name: "Yam Pounder", category: "kitchenware", price: 12000, bulkPrice: 10800, bulkQty: 6, image: "yampounder.jpg", badge: "bestseller", description: "Make pounded yam in minutes. No more stress!", stock: 5, soldToday: 7 },
-            { id: 5, name: "Food Processor", category: "kitchenware", price: 8500, bulkPrice: 7650, bulkQty: 12, image: "foodprocessor.jpg", badge: "", description: "Chop, blend, grind easily. Multi-functional.", stock: 20, soldToday: 2 },
-            { id: 6, name: "Electric Kettle", category: "kitchenware", price: 6500, bulkPrice: 5850, bulkQty: 15, image: "kettle.jpg", badge: "", description: "Fast boiling, durable stainless steel.", stock: 25, soldToday: 0 },
-            { id: 7, name: "Non-Stick Pans", category: "kitchenware", price: 14000, bulkPrice: 12600, bulkQty: 8, image: "pans.jpg", badge: "", description: "3-piece frying pan set. Easy to clean.", stock: 10, soldToday: 1 },
-            { id: 8, name: "Silicone Utensils", category: "kitchenware", price: 4500, bulkPrice: 4050, bulkQty: 20, image: "utensils.jpg", badge: "", description: "Heat-resistant tools. 5-piece set.", stock: 30, soldToday: 0 },
+            // ===== PAGE 1: HOUSEHOLD KITCHEN ESSENTIALS =====
+            { id: 1, name: "Laundry Net", category: "household", price: 1800, bulkPrice: 1500, bulkQty: 12, image: "laundry-net.jpg", badge: "", description: "Durable mesh net for protecting clothes in the washing machine.", stock: 50, soldToday: 3 },
+            { id: 2, name: "Portable Rechargeable Juicer", category: "kitchenware", price: 4500, bulkPrice: 3800, bulkQty: 10, image: "portable-juicer.jpg", badge: "hot", description: "USB rechargeable mini blender. Perfect for smoothies on the go.", stock: 30, soldToday: 5 },
+            { id: 3, name: "Potato Peeler", category: "kitchenware", price: 1800, bulkPrice: 1500, bulkQty: 20, image: "potato-peeler.jpg", badge: "", description: "Sharp stainless steel blade with comfortable grip handle.", stock: 60, soldToday: 2 },
+            { id: 4, name: "2 Step Soap Case", category: "household", price: 1600, bulkPrice: 1300, bulkQty: 24, image: "soap-case.jpg", badge: "", description: "Drainage soap dish with two-tier design. Keeps soap dry.", stock: 45, soldToday: 1 },
+            { id: 5, name: "6 Way Aluminium Grater", category: "kitchenware", price: 3500, bulkPrice: 2900, bulkQty: 12, image: "aluminium-grater.jpg", badge: "", description: "Multi-purpose grater with 6 different blade styles.", stock: 35, soldToday: 2 },
+            { id: 6, name: "Lunch Bag (Insulated)", category: "household", price: 2600, bulkPrice: 2200, bulkQty: 15, image: "lunch-bag.jpg", badge: "", description: "Thermal insulated lunch bag. Keeps food warm or cold.", stock: 40, soldToday: 3 },
 
-            { id: 9, name: "Power Bank 20KmAh", category: "household", price: 12000, bulkPrice: 10800, bulkQty: 10, image: "powerbank.jpg", badge: "bestseller", description: "High capacity charging for all devices.", stock: 6, soldToday: 5 },
-            { id: 10, name: "LED Lantern", category: "household", price: 8000, bulkPrice: 7200, bulkQty: 12, image: "lantern.jpg", badge: "", description: "Bright emergency light. Rechargeable.", stock: 18, soldToday: 0 },
-            { id: 11, name: "Solar Fan", category: "household", price: 15000, bulkPrice: 13500, bulkQty: 6, image: "solarfan.jpg", badge: "hot", description: "Rechargeable cooling. Perfect for power outages.", stock: 4, soldToday: 2 },
-            { id: 12, name: "Mosquito Net", category: "household", price: 4500, bulkPrice: 4050, bulkQty: 15, image: "mosquitonet.jpg", badge: "", description: "Malaria protection for the whole family.", stock: 22, soldToday: 0 },
-            { id: 13, name: "Drying Rack", category: "household", price: 7500, bulkPrice: 6750, bulkQty: 8, image: "dryingrack.jpg", badge: "", description: "Foldable clothes rack. Space-saving.", stock: 14, soldToday: 1 },
-            { id: 14, name: "Shoe Rack", category: "household", price: 5000, bulkPrice: 4500, bulkQty: 12, image: "shoerack.jpg", badge: "", description: "Stackable organizer for 12 pairs.", stock: 16, soldToday: 0 },
-            { id: 15, name: "Bedding Set", category: "household", price: 12000, bulkPrice: 10800, bulkQty: 10, image: "bedding.jpg", badge: "", description: "Soft 4-piece set. King size.", stock: 9, soldToday: 3 },
+            // ===== PAGE 2: MORE HOUSEHOLD ESSENTIALS =====
+            { id: 7, name: "Gym/Student Size Towel", category: "household", price: 2500, bulkPrice: 2000, bulkQty: 12, image: "gym-towel.jpg", badge: "", description: "Compact quick-dry towel. Perfect for gym, travel, or school.", stock: 55, soldToday: 4 },
+            { id: 8, name: "Bowl - Dozen", category: "kitchenware", price: 7500, bulkPrice: 6500, bulkQty: 5, image: "bowl-dozen.jpg", badge: "", description: "Set of 12 colorful plastic bowls. Stackable and durable.", stock: 25, soldToday: 1 },
+            { id: 9, name: "Fruit Basket - Dozen", category: "kitchenware", price: 6500, bulkPrice: 5500, bulkQty: 6, image: "fruit-basket.jpg", badge: "", description: "12-piece fruit basket set. Elegant design for serving.", stock: 20, soldToday: 2 },
+            { id: 10, name: "Hand Grater", category: "kitchenware", price: 3000, bulkPrice: 2500, bulkQty: 15, image: "hand-grater.jpg", badge: "", description: "Ergonomic hand grater for cheese, vegetables, and more.", stock: 40, soldToday: 3 },
+            { id: 11, name: "Cloth Peg Basket Set", category: "household", price: 2000, bulkPrice: 1600, bulkQty: 24, image: "peg-basket.jpg", badge: "bestseller", description: "Basket with 24 cloth pegs included. Best seller item!", stock: 70, soldToday: 8 },
+            { id: 12, name: "Kitchen Napkins (Set)", category: "household", price: 5000, bulkPrice: 4200, bulkQty: 8, image: "kitchen-napkins.jpg", badge: "", description: "Premium kitchen napkins. Absorbent and reusable.", stock: 30, soldToday: 2 },
+            { id: 13, name: "2 IN 1 Towel", category: "household", price: 3500, bulkPrice: 2900, bulkQty: 10, image: "2in1-towel.jpg", badge: "", description: "Dual-purpose towel set. Soft and highly absorbent.", stock: 35, soldToday: 1 },
+            { id: 14, name: "Gold Insulated Vacuum Flask", category: "household", price: 5000, bulkPrice: 4200, bulkQty: 10, image: "vacuum-flask.jpg", badge: "", description: "Stainless steel flask. Keeps drinks hot/cold for 12 hours.", stock: 25, soldToday: 3 },
+            { id: 15, name: "Keyholders (Assorted)", category: "gifts", price: 6000, bulkPrice: 5000, bulkQty: 10, image: "keyholders.jpg", badge: "", description: "Stylish keyholder set. Great for gifts or personal use.", stock: 40, soldToday: 4 },
 
-            { id: 16, name: "Ankara Notebook", category: "gifts", price: 3500, bulkPrice: 2800, bulkQty: 50, image: "notebook.jpg", badge: "new", description: "African fabric cover. Perfect for corporate gifts.", stock: 100, soldToday: 0 },
-            { id: 17, name: "Thermal Flask", category: "gifts", price: 4500, bulkPrice: 3825, bulkQty: 30, image: "flask.jpg", badge: "bestseller", description: "Customizable corporate gift. 500ml.", stock: 7, soldToday: 4 },
-            { id: 18, name: "Tote Bag", category: "gifts", price: 2800, bulkPrice: 2240, bulkQty: 100, image: "totebag.jpg", badge: "", description: "Eco-friendly jute bag. Custom printing available.", stock: 50, soldToday: 0 },
-            { id: 19, name: "Wine Opener", category: "gifts", price: 3000, bulkPrice: 2550, bulkQty: 40, image: "wineopener.jpg", badge: "", description: "Elegant bar tool set. Gift boxed.", stock: 35, soldToday: 0 },
-            { id: 20, name: "Custom Umbrella", category: "gifts", price: 5500, bulkPrice: 4675, bulkQty: 25, image: "umbrella.jpg", badge: "", description: "Branded rain protection. Auto-open.", stock: 20, soldToday: 1 },
+            // ===== PAGE 3: STYLISH GIFT ITEMS =====
+            { id: 16, name: "Big Size Jute Bag", category: "gifts", price: 3000, bulkPrice: 2500, bulkQty: 20, image: "jute-bag.jpg", badge: "", description: "Eco-friendly large jute bag. Perfect for shopping or gifts.", stock: 50, soldToday: 5 },
+            { id: 17, name: "Shoe Kit", category: "gifts", price: 1800, bulkPrice: 1500, bulkQty: 30, image: "shoe-kit.jpg", badge: "", description: "Complete shoe care kit with polish, brush, and cloth.", stock: 60, soldToday: 3 },
+            { id: 18, name: "Nice Bottle with Handle", category: "gifts", price: 1800, bulkPrice: 1500, bulkQty: 30, image: "bottle-handle.jpg", badge: "bestseller", description: "Stylish water bottle with carry handle. Customer favorite!", stock: 80, soldToday: 12 },
+            { id: 19, name: "Rechargeable Lamps", category: "household", price: 6500, bulkPrice: 5500, bulkQty: 8, image: "rechargeable-lamp.jpg", badge: "hot", description: "LED rechargeable lamp. Perfect for reading and power outages.", stock: 35, soldToday: 6 },
+            { id: 20, name: "Bamboo Cooperate 4 in 1", category: "gifts", price: 2500, bulkPrice: 2000, bulkQty: 20, image: "bamboo-set.jpg", badge: "", description: "4-piece bamboo stationery set. Eco-friendly corporate gift.", stock: 45, soldToday: 2 },
+            { id: 21, name: "Luxury Wall Clock", category: "decor", price: 4000, bulkPrice: 3400, bulkQty: 12, image: "wall-clock.jpg", badge: "", description: "Elegant decorative wall clock. Adds style to any room.", stock: 20, soldToday: 1 },
+            { id: 22, name: "Lunch Bag (Premium)", category: "gifts", price: 3500, bulkPrice: 2900, bulkQty: 15, image: "lunch-bag-premium.jpg", badge: "", description: "Premium insulated lunch bag with compartments.", stock: 30, soldToday: 2 },
+            { id: 23, name: "Souvenir Bag Dozen", category: "gifts", price: 20000, bulkPrice: 17000, bulkQty: 3, image: "souvenir-bag.jpg", badge: "", description: "12 custom souvenir bags. Perfect for events and weddings.", stock: 15, soldToday: 1 },
+            { id: 24, name: "4 in 1 Cooperate Set", category: "gifts", price: 25000, bulkPrice: 21000, bulkQty: 3, image: "corporate-set.jpg", badge: "", description: "Executive gift set: pen, notebook, card holder, and keychain.", stock: 10, soldToday: 2 },
 
-            { id: 21, name: "Electric Toothbrush", category: "personal", price: 5000, bulkPrice: 4500, bulkQty: 20, image: "toothbrush.jpg", badge: "", description: "Advanced oral care. 3 modes.", stock: 28, soldToday: 0 },
-            { id: 22, name: "Facial Steamer", category: "personal", price: 8500, bulkPrice: 7650, bulkQty: 12, image: "steamer.jpg", badge: "", description: "Spa-quality skincare at home.", stock: 11, soldToday: 2 },
-            { id: 23, name: "Hair Clipper", category: "personal", price: 7000, bulkPrice: 6300, bulkQty: 12, image: "clipper.jpg", badge: "", description: "Professional grooming kit. 4 guards.", stock: 13, soldToday: 0 },
-            { id: 24, name: "Garment Steamer", category: "personal", price: 9500, bulkPrice: 8550, bulkQty: 10, image: "garmentsteamer.jpg", badge: "", description: "Wrinkle-free clothes in minutes.", stock: 6, soldToday: 1 },
+            // ===== PAGE 4: EVERYDAY ESSENTIALS =====
+            { id: 25, name: "5 in 1 Gym Size Towel", category: "household", price: 5000, bulkPrice: 4200, bulkQty: 8, image: "gym-towel-5in1.jpg", badge: "", description: "Set of 5 gym towels. Quick-dry and compact.", stock: 40, soldToday: 3 },
+            { id: 26, name: "Cocktail Cups", category: "kitchenware", price: 2400, bulkPrice: 2000, bulkQty: 20, image: "cocktail-cups.jpg", badge: "", description: "Colorful cocktail cup set. Perfect for parties and events.", stock: 60, soldToday: 4 },
+            { id: 27, name: "Mini Basket - Dozen", category: "household", price: 6500, bulkPrice: 5500, bulkQty: 6, image: "mini-basket.jpg", badge: "", description: "12 mini storage baskets. Organize small items easily.", stock: 30, soldToday: 2 },
+            { id: 28, name: "Multipurpose Cable", category: "gadgets", price: 4500, bulkPrice: 3800, bulkQty: 10, image: "multipurpose-cable.jpg", badge: "", description: "3-in-1 charging cable. Compatible with all phone types.", stock: 50, soldToday: 7 },
+            { id: 29, name: "Slub Cup", category: "kitchenware", price: 2000, bulkPrice: 1700, bulkQty: 24, image: "slub-cup.jpg", badge: "", description: "Textured ceramic slub cup. Stylish and durable.", stock: 45, soldToday: 3 },
+            { id: 30, name: "Toilet Brush", category: "household", price: 1500, bulkPrice: 1200, bulkQty: 30, image: "toilet-brush.jpg", badge: "", description: "Long-handled toilet brush with holder. Hygienic design.", stock: 70, soldToday: 5 },
+            { id: 31, name: "Foldable Bowl", category: "kitchenware", price: 1500, bulkPrice: 1200, bulkQty: 30, image: "foldable-bowl.jpg", badge: "", description: "Silicone foldable bowl. Space-saving and portable.", stock: 55, soldToday: 4 },
+            { id: 32, name: "Keyholder MOQ 30Pcs", category: "gifts", price: 1500, bulkPrice: 1200, bulkQty: 30, image: "keyholder-moq.jpg", badge: "", description: "Custom keyholders. Minimum order 30 pieces.", stock: 100, soldToday: 8 },
+            { id: 33, name: "Office Mugs", category: "gifts", price: 2900, bulkPrice: 2400, bulkQty: 15, image: "office-mugs.jpg", badge: "", description: "Ceramic office mug set. Professional and elegant.", stock: 40, soldToday: 3 },
 
-            // ===== BACK2SCHOOL PRODUCTS =====
-            { id: 25, name: "Student Backpack", category: "back2school", price: 8500, bulkPrice: 7200, bulkQty: 20, image: "backpack.jpg", badge: "new", description: "Durable waterproof backpack with laptop compartment.", stock: 45, soldToday: 5 },
-            { id: 26, name: "Lunch Box Set", category: "back2school", price: 4500, bulkPrice: 3825, bulkQty: 30, image: "lunchbox.jpg", badge: "", description: "3-piece leak-proof container set with cutlery.", stock: 60, soldToday: 2 },
-            { id: 27, name: "Stationery Kit", category: "back2school", price: 3500, bulkPrice: 2975, bulkQty: 50, image: "stationery.jpg", badge: "bestseller", description: "Complete writing set: pens, pencils, erasers & ruler.", stock: 80, soldToday: 12 },
-            { id: 28, name: "Water Bottle 1L", category: "back2school", price: 2500, bulkPrice: 2125, bulkQty: 40, image: "waterbottle.jpg", badge: "", description: "Insulated stainless steel bottle. Keeps drinks cold 12hrs.", stock: 55, soldToday: 3 },
-            { id: 29, name: "School Shoes", category: "back2school", price: 12000, bulkPrice: 10200, bulkQty: 15, image: "schoolshoes.jpg", badge: "", description: "Black leather school shoes. Comfortable all-day wear.", stock: 25, soldToday: 1 },
-            { id: 30, name: "Scientific Calculator", category: "back2school", price: 5500, bulkPrice: 4675, bulkQty: 25, image: "calculator.jpg", badge: "hot", description: "Advanced 417-function calculator for students.", stock: 35, soldToday: 8 },
-
-            // ===== DECOR & FURNITURE PRODUCTS =====
-            { id: 31, name: "Wall Art Canvas", category: "decor", price: 15000, bulkPrice: 12750, bulkQty: 8, image: "wallart.jpg", badge: "new", description: "Modern abstract canvas print. Ready to hang.", stock: 12, soldToday: 1 },
-            { id: 32, name: "LED Strip Lights", category: "decor", price: 6500, bulkPrice: 5525, bulkQty: 15, image: "ledstrip.jpg", badge: "hot", description: "RGB color-changing strip with remote. 5 meters.", stock: 40, soldToday: 6 },
-            { id: 33, name: "Throw Pillows (2pcs)", category: "decor", price: 8000, bulkPrice: 6800, bulkQty: 12, image: "pillows.jpg", badge: "", description: "Soft decorative cushions with removable covers.", stock: 22, soldToday: 2 },
-            { id: 34, name: "Foldable Storage Ottoman", category: "decor", price: 18000, bulkPrice: 15300, bulkQty: 6, image: "ottoman.jpg", badge: "bestseller", description: "Multi-functional seat with hidden storage compartment.", stock: 8, soldToday: 3 },
-            { id: 35, name: "Table Lamp Modern", category: "decor", price: 9500, bulkPrice: 8075, bulkQty: 10, image: "tablelamp.jpg", badge: "", description: "Minimalist bedside lamp with touch dimmer.", stock: 15, soldToday: 1 },
-            { id: 36, name: "Floating Shelves (3pcs)", category: "decor", price: 11000, bulkPrice: 9350, bulkQty: 8, image: "shelves.jpg", badge: "", description: "Rustic wood wall shelves. Easy installation included.", stock: 18, soldToday: 0 },
-
-            // ===== GADGETS PRODUCTS =====
-            { id: 37, name: "Bluetooth Earbuds", category: "gadgets", price: 15000, bulkPrice: 12750, bulkQty: 10, image: "earbuds.jpg", badge: "hot", description: "True wireless with noise cancellation. 30hr battery.", stock: 20, soldToday: 7 },
-            { id: 38, name: "Smart Watch", category: "gadgets", price: 25000, bulkPrice: 21250, bulkQty: 8, image: "smartwatch.jpg", badge: "bestseller", description: "Fitness tracker with heart rate & sleep monitor.", stock: 10, soldToday: 4 },
-            { id: 39, name: "Phone Stand Holder", category: "gadgets", price: 3500, bulkPrice: 2975, bulkQty: 50, image: "phonestand.jpg", badge: "", description: "Adjustable aluminum stand for desk or bed.", stock: 70, soldToday: 3 },
-            { id: 40, name: "USB-C Hub 7-in-1", category: "gadgets", price: 12000, bulkPrice: 10200, bulkQty: 15, image: "usbhub.jpg", badge: "new", description: "Multi-port adapter: HDMI, USB, SD card & charging.", stock: 25, soldToday: 2 },
-            { id: 41, name: "Portable Projector", category: "gadgets", price: 45000, bulkPrice: 38250, bulkQty: 4, image: "projector.jpg", badge: "", description: "Mini HD projector. Connects to phone & laptop.", stock: 5, soldToday: 1 },
-            { id: 42, name: "Wireless Charger Pad", category: "gadgets", price: 6500, bulkPrice: 5525, bulkQty: 25, image: "wirelesscharger.jpg", badge: "", description: "Fast charging for all Qi-enabled smartphones.", stock: 30, soldToday: 5 }
+            // ===== PAGE 5: HOME HANDY ESSENTIALS =====
+            { id: 34, name: "Plate Rack", category: "kitchenware", price: 4500, bulkPrice: 3800, bulkQty: 10, image: "plate-rack.jpg", badge: "", description: "3-tier plate drying rack. Drainage tray included.", stock: 25, soldToday: 2 },
+            { id: 35, name: "Serving Spoon (Set)", category: "kitchenware", price: 2000, bulkPrice: 1700, bulkQty: 20, image: "serving-spoon.jpg", badge: "", description: "Set of wooden serving spoons. Smooth finish.", stock: 50, soldToday: 4 },
+            { id: 36, name: "Smp Bowl - Dozen", category: "kitchenware", price: 24000, bulkPrice: 20000, bulkQty: 2, image: "smp-bowl.jpg", badge: "", description: "12-piece premium bowl set. High-quality melamine.", stock: 15, soldToday: 1 },
+            { id: 37, name: "Data Cable", category: "gadgets", price: 3000, bulkPrice: 2500, bulkQty: 20, image: "data-cable.jpg", badge: "", description: "Fast-charging data cable. Braided for durability.", stock: 60, soldToday: 6 },
+            { id: 38, name: "6Up Bottles", category: "gifts", price: 1600, bulkPrice: 1300, bulkQty: 30, image: "6up-bottles.jpg", badge: "", description: "Set of 6 colorful bottles. Great for kids and events.", stock: 80, soldToday: 5 },
+            { id: 39, name: "Mini Touch Light", category: "gadgets", price: 1800, bulkPrice: 1500, bulkQty: 25, image: "mini-touch-light.jpg", badge: "", description: "LED touch-activated light. Stick anywhere.", stock: 70, soldToday: 7 },
+            { id: 40, name: "Knife Sharpener", category: "kitchenware", price: 800, bulkPrice: 650, bulkQty: 50, image: "knife-sharpener.jpg", badge: "", description: "Compact knife sharpener. Restores blade edge quickly.", stock: 100, soldToday: 10 },
+            { id: 41, name: "3 in 1 Bottle", category: "gifts", price: 6500, bulkPrice: 5500, bulkQty: 8, image: "3in1-bottle.jpg", badge: "", description: "3-compartment bottle. Separate drinks or snacks.", stock: 30, soldToday: 3 },
+            { id: 42, name: "Notepad with Pen", category: "gifts", price: 6000, bulkPrice: 5000, bulkQty: 10, image: "notepad-pen.jpg", badge: "", description: "Executive notepad with matching pen. Corporate gift ready.", stock: 35, soldToday: 4 }
         ];
 
         const placeholderImage = "https://via.placeholder.com/300x180/f5f0f7/652e92?text=";
@@ -619,6 +619,64 @@
             }
             sortProducts();
         }
+
+        // ===== MOBILE DROPDOWN FUNCTIONS =====
+        function toggleCategoryDropdown() {
+            const menu = document.getElementById('catDropdownMenu');
+            const toggle = document.getElementById('catDropdownToggle');
+            const isOpen = menu.classList.contains('open');
+
+            if (isOpen) {
+                menu.classList.remove('open');
+                toggle.classList.remove('open');
+            } else {
+                menu.classList.add('open');
+                toggle.classList.add('open');
+            }
+        }
+
+        function filterCategoryDropdown(category, btn) {
+            // Update dropdown items
+            document.querySelectorAll('.category-dropdown-item').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Update label
+            const label = document.getElementById('currentCategoryLabel');
+            const categoryNames = {
+                'all': '<i class="fas fa-th-large"></i> All Categories',
+                'kitchenware': '<i class="fas fa-utensils"></i> Kitchenware',
+                'household': '<i class="fas fa-home"></i> Household',
+                'back2school': '<i class="fas fa-graduation-cap"></i> Back2School',
+                'decor': '<i class="fas fa-couch"></i> Decor & Furniture',
+                'gadgets': '<i class="fas fa-mobile-alt"></i> Gadgets',
+                'gifts': '<i class="fas fa-gift"></i> Gifts',
+                'personal': '<i class="fas fa-spa"></i> Personal Care'
+            };
+            label.innerHTML = categoryNames[category] || category;
+
+            // Close dropdown
+            document.getElementById('catDropdownMenu').classList.remove('open');
+            document.getElementById('catDropdownToggle').classList.remove('open');
+
+            // Filter products
+            if (category === 'all') {
+                filteredProducts = [...products];
+            } else {
+                filteredProducts = products.filter(p => p.category === category);
+            }
+            sortProducts();
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const dropdown = document.getElementById('categoryDropdownMobile');
+            if (dropdown && !dropdown.contains(e.target)) {
+                const menu = document.getElementById('catDropdownMenu');
+                const toggle = document.getElementById('catDropdownToggle');
+                if (menu) menu.classList.remove('open');
+                if (toggle) toggle.classList.remove('open');
+            }
+        });
 
         function resetFilters() {
             document.getElementById('searchInput').value = '';

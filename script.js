@@ -1,14 +1,5 @@
 // ===== CONFIGURATION =====
-        const GITHUB_USERNAME = 'MartieDenterprises';
-        const GITHUB_REPO = 'MartieDenterprises/martied-enterprise';
-        const GITHUB_BRANCH = 'main';
-
-        const BASE_IMAGE_URL = (() => {
-            if (window.location.hostname.includes('github.io')) {
-                return `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${GITHUB_REPO}/${GITHUB_BRANCH}/images/`;
-            }
-            return 'images/';
-        })();
+        const BASE_IMAGE_URL = 'images/';
 
         // ===== PAGINATION CONFIG =====
         const PRODUCTS_PER_PAGE = 8;
@@ -48,7 +39,7 @@
             { id: 21, name: "Luxury Wall Clock", category: "decor", price: 4000, bulkPrice: 3400, bulkQty: 12, image: "wall-clock.jpeg", badge: "", description: "Elegant decorative wall clock. Adds style to any room.", stock: 20, soldToday: 1 },
             { id: 22, name: "Lunch Bag (Premium)", category: "gifts", price: 3500, bulkPrice: 2900, bulkQty: 15, image: "lunch-bag-premium.jpg", badge: "", description: "Premium insulated lunch bag with compartments.", stock: 30, soldToday: 2 },
             { id: 23, name: "Souvenir Bag Dozen", category: "gifts", price: 20000, bulkPrice: 17000, bulkQty: 3, image: "souvenir-bag.jpeg", badge: "", description: "12 custom souvenir bags. Perfect for events and weddings.", stock: 15, soldToday: 1 },
-            { id: 24, name: "4 in 1 Cooperate Set", category: "gifts", price: 25000, bulkPrice: 21000, bulkQty: 3, image: "corporate-set.jpg", badge: "", description: "Executive gift set: pen, notebook, card holder, and keychain.", stock: 10, soldToday: 2 },
+            { id: 24, name: "4 in 1 Cooperate Set", category: "gifts", price: 25000, bulkPrice: 21000, bulkQty: 3, image: "corporate-set.jpeg", badge: "", description: "Executive gift set: pen, notebook, card holder, and keychain.", stock: 10, soldToday: 2 },
 
             // ===== PAGE 4: EVERYDAY ESSENTIALS =====
             { id: 25, name: "5 in 1 Gym Size Towel", category: "household", price: 5000, bulkPrice: 4200, bulkQty: 8, image: "gym-towel-5in1.jpg", badge: "", description: "Set of 5 gym towels. Quick-dry and compact.", stock: 40, soldToday: 3 },

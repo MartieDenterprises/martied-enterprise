@@ -39,7 +39,7 @@
             { id: 21, name: "Luxury Wall Clock", category: "decor", price: 4000, bulkPrice: 3400, bulkQty: 12, image: "wall-clock.jpeg", badge: "", description: "Elegant decorative wall clock. Adds style to any room.", stock: 20, soldToday: 1 },
             { id: 22, name: "Lunch Bag (Premium)", category: "gifts", price: 3500, bulkPrice: 2900, bulkQty: 15, image: "lunch-bag-premium.jpg", badge: "", description: "Premium insulated lunch bag with compartments.", stock: 30, soldToday: 2 },
             { id: 23, name: "Souvenir Bag Dozen", category: "gifts", price: 20000, bulkPrice: 17000, bulkQty: 3, image: "souvenir-bag.jpeg", badge: "", description: "12 custom souvenir bags. Perfect for events and weddings.", stock: 15, soldToday: 1 },
-            { id: 24, name: "4 in 1 Cooperate Set", category: "gifts", price: 25000, bulkPrice: 21000, bulkQty: 3, image: "corporate-set.jpeg", badge: "", description: "Executive gift set: pen, notebook, card holder, and keychain.", stock: 10, soldToday: 2 },
+            { id: 24, name: "4 in 1 Cooperate Set", category: "gifts", price: 25000, bulkPrice: 21000, bulkQty: 3, image: "corporate-set.jpg", badge: "", description: "Executive gift set: pen, notebook, card holder, and keychain.", stock: 10, soldToday: 2 },
 
             // ===== PAGE 4: EVERYDAY ESSENTIALS =====
             { id: 25, name: "5 in 1 Gym Size Towel", category: "household", price: 5000, bulkPrice: 4200, bulkQty: 8, image: "gym-towel-5in1.jpg", badge: "", description: "Set of 5 gym towels. Quick-dry and compact.", stock: 40, soldToday: 3 },
@@ -53,13 +53,13 @@
             { id: 33, name: "Office Mugs", category: "gifts", price: 2900, bulkPrice: 2400, bulkQty: 15, image: "office-mugs.jpg", badge: "", description: "Ceramic office mug set. Professional and elegant.", stock: 40, soldToday: 3 },
 
             // ===== PAGE 5: HOME HANDY ESSENTIALS =====
-            { id: 34, name: "Plate Rack", category: "kitchenware", price: 4500, bulkPrice: 3800, bulkQty: 10, image: "plate-rack.jpg", badge: "", description: "3-tier plate drying rack. Drainage tray included.", stock: 25, soldToday: 2 },
-            { id: 35, name: "Serving Spoon (Set)", category: "kitchenware", price: 2000, bulkPrice: 1700, bulkQty: 20, image: "serving-spoon.jpg", badge: "", description: "Set of wooden serving spoons. Smooth finish.", stock: 50, soldToday: 4 },
-            { id: 36, name: "Smp Bowl - Dozen", category: "kitchenware", price: 24000, bulkPrice: 20000, bulkQty: 2, image: "smp-bowl.jpg", badge: "", description: "12-piece premium bowl set. High-quality melamine.", stock: 15, soldToday: 1 },
-            { id: 37, name: "Data Cable", category: "gadgets", price: 3000, bulkPrice: 2500, bulkQty: 20, image: "data-cable.jpg", badge: "", description: "Fast-charging data cable. Braided for durability.", stock: 60, soldToday: 6 },
-            { id: 38, name: "6Up Bottles", category: "gifts", price: 1600, bulkPrice: 1300, bulkQty: 30, image: "6up-bottles.jpg", badge: "", description: "Set of 6 colorful bottles. Great for kids and events.", stock: 80, soldToday: 5 },
-            { id: 39, name: "Mini Touch Light", category: "gadgets", price: 1800, bulkPrice: 1500, bulkQty: 25, image: "mini-touch-light.jpg", badge: "", description: "LED touch-activated light. Stick anywhere.", stock: 70, soldToday: 7 },
-            { id: 40, name: "Knife Sharpener", category: "kitchenware", price: 800, bulkPrice: 650, bulkQty: 50, image: "knife-sharpener.jpg", badge: "", description: "Compact knife sharpener. Restores blade edge quickly.", stock: 100, soldToday: 10 },
+            { id: 34, name: "Plate Rack", category: "kitchenware", price: 4500, bulkPrice: 3800, bulkQty: 10, image: "plate-rack.jpeg", badge: "", description: "3-tier plate drying rack. Drainage tray included.", stock: 25, soldToday: 2 },
+            { id: 35, name: "Serving Spoon (Set)", category: "kitchenware", price: 2000, bulkPrice: 1700, bulkQty: 20, image: "serving-spoon.jpeg", badge: "", description: "Set of wooden serving spoons. Smooth finish.", stock: 50, soldToday: 4 },
+            { id: 36, name: "Smp Bowl - Dozen", category: "kitchenware", price: 24000, bulkPrice: 20000, bulkQty: 2, image: "smp-bowl.jpeg", badge: "", description: "12-piece premium bowl set. High-quality melamine.", stock: 15, soldToday: 1 },
+            { id: 37, name: "Data Cable", category: "gadgets", price: 3000, bulkPrice: 2500, bulkQty: 20, image: "data-cable.jpeg", badge: "", description: "Fast-charging data cable. Braided for durability.", stock: 60, soldToday: 6 },
+            { id: 38, name: "6Up Bottles", category: "gifts", price: 1600, bulkPrice: 1300, bulkQty: 30, image: "6up-bottles.jpeg", badge: "", description: "Set of 6 colorful bottles. Great for kids and events.", stock: 80, soldToday: 5 },
+            { id: 39, name: "Mini Touch Light", category: "gadgets", price: 1800, bulkPrice: 1500, bulkQty: 25, image: "mini-touch-light.jpeg", badge: "", description: "LED touch-activated light. Stick anywhere.", stock: 70, soldToday: 7 },
+            { id: 40, name: "Knife Sharpener", category: "kitchenware", price: 800, bulkPrice: 650, bulkQty: 50, image: "knife-sharpener.jpeg", badge: "", description: "Compact knife sharpener. Restores blade edge quickly.", stock: 100, soldToday: 10 },
             { id: 41, name: "3 in 1 Bottle", category: "gifts", price: 6500, bulkPrice: 5500, bulkQty: 8, image: "3in1-bottle.jpeg", badge: "", description: "3-compartment bottle. Separate drinks or snacks.", stock: 30, soldToday: 3 },
             { id: 42, name: "Notepad with Pen", category: "gifts", price: 6000, bulkPrice: 5000, bulkQty: 10, image: "notepad-pen.jpeg", badge: "", description: "Executive notepad with matching pen. Corporate gift ready.", stock: 35, soldToday: 4 }
         ];

@@ -252,6 +252,21 @@ function saveCart() {
 function saveProducts() {
     localStorage.setItem('martied_products', JSON.stringify(products));
 }
+// ===== MAKE ALL STOCK UNLIMITED =====
+function makeStockUnlimited() {
+    products.forEach(product => {
+        product.stock = 9999;  // Or use Infinity if you prefer
+    });
+    saveProducts(); // Save to localStorage so it persists
+}
+
+// Call this in your INIT section:
+document.addEventListener('DOMContentLoaded', function() {
+    makeStockUnlimited(); // <-- Add this line
+    filteredProducts = [...products];
+    renderProducts(filteredProducts, true);
+    updateCartUI();
+});
 
 function updateCartUI() {
     const count = cart.reduce((sum, item) => sum + item.quantity, 0);

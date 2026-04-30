@@ -789,6 +789,12 @@ function filterCategoryDropdown(category, btn) {
         'decor': '<i class="fas fa-couch"></i> Decor & Furniture',
         'gadgets': '<i class="fas fa-mobile-alt"></i> Gadgets',
         'gifts': '<i class="fas fa-gift"></i> Gifts',
+        'bags': '<i class="fas fa-shopping-bag"></i> 
+Bags',
+        'perfume': '<i class="fas fa-spray-can"></i> 
+Perfumes',
+        'umbrella': '<i class="fas fa-umbrella"></i> 
+Umbrella',
         'personal': '<i class="fas fa-spa"></i> Personal Care'
     };
     label.innerHTML = categoryNames[category] || category;

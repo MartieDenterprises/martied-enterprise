@@ -518,7 +518,7 @@ function renderProducts(productsToRender = filteredProducts, resetPage = true) {
     productsToShow.forEach((product, index) => {
         const imageUrl = getImageUrl(product);
         const badge = product.badge ? `<span class="product-badge badge-${product.badge}">${product.badge === 'hot' ? 'Hot' : product.badge === 'new' ? 'New' : 'Best'}</span>` : '';
-        const bulkNote = product.bulkQty ? `<p class="bulk-note">Bulk ${product.bulkQty}+: \u20A6${product.bulkPrice.toLocaleString()}</p>` : '';
+        const bulkNote = '';
         const stockBadge = getStockBadge(product.stock);
         const socialProof = getSocialProof(product.soldToday);
         const isWishlisted = wishlist.includes(product.id);
@@ -672,12 +672,7 @@ function showProductDetail(productId) {
     document.getElementById('detailStock').innerHTML = stockHtml;
 
     const bulkMeta = document.getElementById('bulkMetaItem');
-    if (product.bulkQty) {
-        bulkMeta.style.display = 'block';
-        document.getElementById('detailMetaBulk').textContent = `${product.bulkQty}+ at \u20A6${product.bulkPrice.toLocaleString()}`;
-    } else {
-        bulkMeta.style.display = 'none';
-    }
+    bulkMeta.style.display = 'none';
 
     const addToCartBtn = document.getElementById('detailAddToCart');
     addToCartBtn.dataset.productId = productId;
@@ -989,8 +984,6 @@ function saveNewProduct() {
         name: name,
         category: category,
         price: price,
-        bulkPrice: Math.floor(price * 0.9),
-        bulkQty: 10,
         image: imagePath,
         badge: 'new',
         description: description || 'New product',
@@ -1023,5 +1016,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('adminPassword').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') checkAdminLogin();
+    });
+}); === 'Enter') checkAdminLogin();
     });
 });

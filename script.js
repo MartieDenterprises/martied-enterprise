@@ -204,6 +204,13 @@ let products = [
     { id: 190, name: "Umbrella", category: "umbrella", price: 2700, image: "umbrella-2700.jpeg", badge: "", description: "Standard umbrella. Reliable rain protection.", stock: 9990, soldToday: 40 },
     { id: 191, name: "Umbrella", category: "umbrella", price: 3000, image: "umbrella-3000.jpeg", badge: "", description: "Quality umbrella. Wind-resistant frame.", stock: 9990, soldToday: 60 },
     { id: 192, name: "Big Foldable Umbrella", category: "umbrella", price: 4500, image: "big-foldable-umbrella.jpeg", badge: "", description: "Large foldable umbrella. Extra coverage for heavy rain.", stock: 9990, soldToday: 20 },
+    { id: 193, name: "Remikins Plate by 6", category: "kitchenware", price: 13000, image: "remikins-plate-6.jpeg", badge: "", description: "Set of 6 Remikins plates. Elegant dining set.", stock: 9990, soldToday: 30 },
+    { id: 194, name: "Travel Bag", category: "bags", price: 17000, image: "travel-bag.jpeg", badge: "", description: "Spacious travel bag. Durable and stylish for trips.", stock: 8925, soldToday: 55 },
+    { id: 195, name: "6 in 1 Candy Set", category: "gifts", price: 15500, image: "6in1-candy-set.jpeg", badge: "", description: "6-in-1 assorted candy gift set. Perfect for gifting.", stock: 990, soldToday: 23 },
+    { id: 196, name: "3 in 1 Tray", category: "kitchenware", price: 13000, image: "3in1-tray-3.jpeg", badge: "", description: "Versatile 3-in-1 serving tray set.", stock: 9990, soldToday: 33 },
+    { id: 197, name: "3 in 1 Clipper", category: "personal", price: 10500, image: "3in1-clipper.jpeg", badge: "", description: "3-in-1 hair clipper set. Professional grooming kit.", stock: 9930, soldToday: 105 },
+    { id: 198, name: "Manicure Set", category: "personal", price: 1500, image: "manicure-set.jpeg", badge: "", description: "Complete manicure set. Nail care essentials.", stock: 9960, soldToday: 220 },
+    { id: 199, name: "Bladeless Fan", category: "gadgets", price: 6000, image: "bladeless-fan.jpeg", badge: "", description: "Safe bladeless fan. Modern design, child-friendly.", stock: 9995, soldToday: 10 },
 ];
 
 const placeholderImage = "https://via.placeholder.com/300x180/f5f0f7/652e92?text=";

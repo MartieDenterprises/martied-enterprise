@@ -220,6 +220,15 @@ let products = [
     { id: 206, name: "Plastic Cup", category: "gifts", price: 7000, image: "plastic-cup-dozen.jpeg", badge: "", description: "Plastic cup set. 7000 per dozen. Great for events and gifting.", stock: 9990, soldToday: 22 },
     { id: 207, name: "3 in 1 Kenwood Blender", category: "kitchenware", price: 50000, image: "3in1-kenwood-blender.jpeg", badge: "", description: "Kenwood 3-in-1 multi-function blender. Professional grade.", stock: 9992, soldToday: 100 },
     { id: 208, name: "Jewelry Box", category: "gifts", price: 9500, image: "jewelry-box.jpeg", badge: "", description: "Elegant jewelry box. Perfect for storing and organizing accessories.", stock: 9990, soldToday: 12 },
+    { id: 209, name: "3pcs Water Bottle", category: "gifts", price: 6500, image: "3pcs-water-bottle.jpeg", badge: "", description: "Set of 3 water bottles. Perfect for family or gifting.", stock: 9990, soldToday: 60 },
+    { id: 210, name: "Cartoon Handheld Fan", category: "gadgets", price: 4500, image: "cartoon-handheld-fan.jpeg", badge: "", description: "Portable cartoon handheld fan. 6 different colors available.", stock: 9960, soldToday: 80 },
+    { id: 211, name: "Professional Hair Clipper", category: "personal", price: 8000, image: "professional-hair-clipper.jpeg", badge: "", description: "Professional grade hair clipper. Sharp blades, precise cuts.", stock: 9930, soldToday: 220 },
+    { id: 212, name: "3 in 1 Charging Cable", category: "gadgets", price: 7000, image: "3in1-charging-cable.jpeg", badge: "", description: "3-in-1 multi-function charging cable. Compatible with all phone types.", stock: 9995, soldToday: 120 },
+    { id: 213, name: "Borosilicate Glass Cup and Jug", category: "kitchenware", price: 9500, image: "borosilicate-glass-cup-jug.jpeg", badge: "", description: "Heat-resistant borosilicate glass cup and jug set. Elegant design.", stock: 9925, soldToday: 56 },
+    { id: 214, name: "Cup Hot and Cold", category: "kitchenware", price: 9500, image: "cup-hot-cold.jpeg", badge: "", description: "Temperature control cup. Keeps drinks hot or cold for hours.", stock: 9990, soldToday: 10 },
+    { id: 215, name: "Lip Gloss", category: "personal", price: 1000, image: "lip-gloss.jpeg", badge: "", description: "Shiny lip gloss. Single piece.", stock: 9900, soldToday: 30 },
+    { id: 216, name: "Lip Gloss Dozen", category: "personal", price: 11000, image: "lip-gloss-dozen.jpeg", badge: "", description: "Lip gloss dozen pack. 12 pieces at bulk price.", stock: 9990, soldToday: 52 },
+
 ];
 
 const placeholderImage = "https://via.placeholder.com/300x180/f5f0f7/652e92?text=";

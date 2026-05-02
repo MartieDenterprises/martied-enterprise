@@ -211,6 +211,15 @@ let products = [
     { id: 197, name: "3 in 1 Clipper", category: "personal", price: 10500, image: "3in1-clipper.jpeg", badge: "", description: "3-in-1 hair clipper set. Professional grooming kit.", stock: 9930, soldToday: 105 },
     { id: 198, name: "Manicure Set", category: "personal", price: 1500, image: "manicure-set.jpeg", badge: "", description: "Complete manicure set. Nail care essentials.", stock: 9960, soldToday: 220 },
     { id: 199, name: "Bladeless Fan", category: "gadgets", price: 6000, image: "bladeless-fan.jpeg", badge: "", description: "Safe bladeless fan. Modern design, child-friendly.", stock: 9995, soldToday: 10 },
+    { id: 200, name: "Juicer", category: "kitchenware", price: 14000, image: "juicer.jpeg", badge: "", description: "Electric juicer. Extract fresh juice easily.", stock: 9995, soldToday: 20 },
+    { id: 201, name: "Pot", category: "kitchenware", price: 130000, image: "pot.jpeg", badge: "", description: "Premium cooking pot. High-quality durable build.", stock: 9999, soldToday: 26 },
+    { id: 202, name: "Auto Face Tracker with Light", category: "gadgets", price: 32000, image: "auto-face-tracker-light.jpeg", badge: "", description: "Auto-tracking phone holder with built-in ring light. Perfect for content creators.", stock: 9995, soldToday: 19 },
+    { id: 203, name: "10 Inches Pad", category: "gadgets", price: 95000, image: "10inches-pad.jpeg", badge: "", description: "10-inch tablet pad. Large screen for work and entertainment.", stock: 9990, soldToday: 15 },
+    { id: 204, name: "Learning Pad", category: "gadgets", price: 6500, image: "learning-pad.jpeg", badge: "", description: "Educational learning pad for kids. Interactive screen.", stock: 9990, soldToday: 81 },
+    { id: 205, name: "Learning Computer", category: "gadgets", price: 7000, image: "learning-computer.jpeg", badge: "", description: "Kids learning computer. Educational games and activities.", stock: 9999, soldToday: 36 },
+    { id: 206, name: "Plastic Cup", category: "gifts", price: 7000, image: "plastic-cup-dozen.jpeg", badge: "", description: "Plastic cup set. 7000 per dozen. Great for events and gifting.", stock: 9990, soldToday: 22 },
+    { id: 207, name: "3 in 1 Kenwood Blender", category: "kitchenware", price: 50000, image: "3in1-kenwood-blender.jpeg", badge: "", description: "Kenwood 3-in-1 multi-function blender. Professional grade.", stock: 9992, soldToday: 100 },
+    { id: 208, name: "Jewelry Box", category: "gifts", price: 9500, image: "jewelry-box.jpeg", badge: "", description: "Elegant jewelry box. Perfect for storing and organizing accessories.", stock: 9990, soldToday: 12 },
 ];
 
 const placeholderImage = "https://via.placeholder.com/300x180/f5f0f7/652e92?text=";

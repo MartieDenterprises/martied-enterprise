@@ -240,6 +240,11 @@ let products = [
     { id: 226, name: "Kamisafe Telescopic Remote Control Circulation Fan", category: "household", price: 52000, image: "kamisafe-telescopic-fan.jpg", badge: "", description: "Kamisafe telescopic circulation fan with remote control. Adjustable height.", stock: 8999, soldToday: 30 },
     { id: 227, name: "Mug Cups 48pcs", category: "gifts", price: 24000, image: "mug-cups-48pcs.jpg", badge: "", description: "Mug cups bulk pack. 48 pieces at ₦24,000. Great for events.", stock: 9920, soldToday: 40 },
     { id: 228, name: "Mug Cup", category: "gifts", price: 4500, image: "mug-cup.jpg", badge: "", description: "Single mug cup. Durable ceramic.", stock: 6000, soldToday: 10 },
+    { id: 229, name: "Wooden Cover Quality Non-Stick Pot", category: "kitchenware", price: 17000, image: "wooden-cover-nonstick-pot.jpeg", badge: "", description: "Quality non-stick pot with wooden cover. Durable and elegant.", stock: 9920, soldToday: 40 },
+    { id: 230, name: "Stainless Matcher", category: "kitchenware", price: 3000, image: "stainless-matcher.jpeg", badge: "", description: "Stainless steel matcher. Essential kitchen tool.", stock: 8950, soldToday: 23 },
+    { id: 231, name: "Brush Holder", category: "household", price: 4000, image: "brush-holder.jpeg", badge: "", description: "Multi-purpose brush holder. Keeps brushes organized and tidy.", stock: 9940, soldToday: 20 },
+    { id: 232, name: "Classic Knife Set", category: "kitchenware", price: 9500, image: "classic-knife-set.jpeg", badge: "", description: "Classic knife set. Sharp blades with comfortable handles.", stock: 9925, soldToday: 10 },
+    { id: 233, name: "Broom and Packer", category: "household", price: 9000, image: "broom-and-packer.jpeg", badge: "", description: "Broom and packer set. Complete cleaning solution for your home.", stock: 3995, soldToday: 5 },
 ];
 
 const placeholderImage = "https://via.placeholder.com/300x180/f5f0f7/652e92?text=";

@@ -477,65 +477,107 @@ function copyAccount() {
 }
 
 function finalizeOrder(method) {
-    const firstName = document.getElementById('customerFirstName').value.trim();
-    const lastName = document.getElementById('customerLastName').value.trim();
-    const phone = document.getElementById('customerPhone').value.trim();
-    const email = document.getElementById('customerEmail').value.trim();
-    const address = document.getElementById('customerAddress').value.trim();
-    const city = document.getElementById('customerCity').value.trim();
-    const state = document.getElementById('customerState').value.trim();
-    const notes = document.getElementById('customerNotes').value.trim();
+    try {
+        // Get form elements safely
+        const firstNameEl = document.getElementById('customerFirstName');
+        const lastNameEl = document.getElementById('customerLastName');
+        const phoneEl = document.getElementById('customerPhone');
+        const emailEl = document.getElementById('customerEmail');
+        const addressEl = document.getElementById('customerAddress');
+        const cityEl = document.getElementById('customerCity');
+        const stateEl = document.getElementById('customerState');
+        const notesEl = document.getElementById('customerNotes');
 
-    if (!firstName || !lastName || !phone || !address || !city || !state) {
-        alert('Please fill all required fields (*)');
-        return;
+        // Check if elements exist
+        if (!firstNameEl || !lastNameEl || !phoneEl || !addressEl || !cityEl || !stateEl) {
+            console.error('Missing form elements:', {
+                firstName: !!firstNameEl,
+                lastName: !!lastNameEl,
+                phone: !!phoneEl,
+                address: !!addressEl,
+                city: !!cityEl,
+                state: !!stateEl
+            });
+            alert('Form error: Some fields are missing. Please refresh the page.');
+            return;
+        }
+
+        const firstName = firstNameEl.value.trim();
+        const lastName = lastNameEl.value.trim();
+        const phone = phoneEl.value.trim();
+        const email = emailEl ? emailEl.value.trim() : '';
+        const address = addressEl.value.trim();
+        const city = cityEl.value.trim();
+        const state = stateEl.value.trim();
+        const notes = notesEl ? notesEl.value.trim() : '';
+
+        // Validate required fields
+        if (!firstName || !lastName || !phone || !address || !city || !state) {
+            alert('Please fill all required fields marked with *');
+            return;
+        }
+
+        const fullName = firstName + ' ' + lastName;
+        const fullAddress = address + ', ' + city + ', ' + state;
+
+        // Build WhatsApp message
+        let message = '*ORDER - Martie-D*\n\n';
+        message += '*Name:* ' + fullName + '\n';
+        message += '*Phone:* ' + phone + '\n';
+        if (email) message += '*Email:* ' + email + '\n';
+        message += '*Address:* ' + fullAddress + '\n';
+        if (notes) message += '*Notes:* ' + notes + '\n';
+        message += '\n*Items:*\n';
+
+        let total = 0;
+        cart.forEach(function(item) {
+            const itemTotal = item.price * item.quantity;
+            total += itemTotal;
+            message += '• ' + item.name + ' x' + item.quantity + ' = N' + itemTotal.toLocaleString() + '\n';
+        });
+
+        message += '\n*Total: N' + total.toLocaleString() + '*\n';
+        message += '*Payment:* ' + (method === 'bank' ? 'Bank Transfer (Moniepoint)' : 'WhatsApp/OD') + '\n';
+
+        const encodedMessage = encodeURIComponent(message);
+        const waUrl = 'https://wa.me/2348168140356?text=' + encodedMessage;
+
+        console.log('Opening WhatsApp URL:', waUrl);
+
+        // Method 1: window.open
+        const newWindow = window.open(waUrl, '_blank');
+
+        // Method 2: Fallback if popup blocked
+        if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+            console.log('Popup blocked, trying fallback...');
+            
+            const link = document.createElement('a');
+            link.href = waUrl;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            
+            // Try click
+            const clickEvent = new MouseEvent('click', {
+                bubbles: true,
+                cancelable: true,
+                view: window
+            });
+            link.dispatchEvent(clickEvent);
+            document.body.removeChild(link);
+        }
+
+        // Clear cart and close
+        cart = [];
+        saveCart();
+        closeCheckout();
+        showToast('Order sent! Opening WhatsApp...');
+
+    } catch (error) {
+        console.error('finalizeOrder error:', error);
+        alert('Error: ' + error.message);
     }
-
-    const fullName = `${firstName} ${lastName}`;
-    const fullAddress = `${address}, ${city}, ${state}`;
-
-    let message = `*ORDER - Martie-D*\n\n`;
-    message += `*Name:* ${fullName}\n`;
-    message += `*Phone:* ${phone}\n`;
-    if (email) message += `*Email:* ${email}\n`;
-    message += `*Address:* ${fullAddress}\n`;
-    if (notes) message += `*Notes:* ${notes}\n`;
-    message += `\n*Items:*\n`;
-
-    let total = 0;
-    cart.forEach(item => {
-        const itemTotal = item.price * item.quantity;
-        total += itemTotal;
-        message += `• ${item.name} x${item.quantity} = ₦${itemTotal.toLocaleString()}\n`;
-    });
-
-    message += `\n*Total: ₦${total.toLocaleString()}*\n`;
-    message += `*Payment:* ${method === 'bank' ? 'Bank Transfer (Moniepoint)' : 'WhatsApp/OD'}\n`;
-
-    const encodedMessage = encodeURIComponent(message);
-    const waUrl = `https://wa.me/2348168140356?text=${encodedMessage}`;
-
-    // Try multiple methods to ensure it opens
-    const newWindow = window.open(waUrl, '_blank');
-    
-    // Fallback if popup was blocked
-    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
-        // Create a temporary link and click it
-        const link = document.createElement('a');
-        link.href = waUrl;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        
-        showToast('Opening WhatsApp... If nothing happens, please allow popups for this site.');
-    }
-
-    cart = [];
-    saveCart();
-    closeCheckout();
-    showToast('Order sent!');
 }
 
 // ===== PRODUCT DISPLAY =====

@@ -245,6 +245,15 @@ let products = [
     { id: 231, name: "Brush Holder", category: "household", price: 4000, image: "brush-holder.jpg", badge: "", description: "Multi-purpose brush holder. Keeps brushes organized and tidy.", stock: 9940, soldToday: 20 },
     { id: 232, name: "Classic Knife Set", category: "kitchenware", price: 9500, image: "classic-knife-set.jpg", badge: "", description: "Classic knife set. Sharp blades with comfortable handles.", stock: 9925, soldToday: 10 },
     { id: 233, name: "Broom and Packer", category: "household", price: 9000, image: "broom-and-packer.jpg", badge: "", description: "Broom and packer set. Complete cleaning solution for your home.", stock: 3995, soldToday: 5 },
+    { id: 234, name: "Executive Office Chair", category: "decor", price: 120000, image: "executive-office-chair.jpg", badge: "", description: "Premium executive office chair for your best comfort. Well packed in a single pack.", stock: 9999, soldToday: 0 },
+    { id: 235, name: "9L Kenwood Yam Pounder & Multi-Function Machine", category: "kitchenware", price: 33000, image: "kenwood-yam-pounder-9l.jpg", badge: "", description: "9L Kenwood yam pounder and multi-functional kitchen machine.", stock: 9999, soldToday: 0 },
+    { id: 236, name: "19pcs Tool Box with Accessories", category: "gadgets", price: 22000, image: "19pcs-tool-box.jpg", badge: "", description: "19-piece tool box complete with accessories. Essential for home repairs.", stock: 9999, soldToday: 0 },
+    { id: 237, name: "Sokany 4-Phase Burner", category: "kitchenware", price: 45000, image: "sokany-4phase-burner.jpg", badge: "", description: "Sokany 4-phase gas burner. Powerful and efficient cooking.", stock: 9999, soldToday: 0 },
+    { id: 238, name: "Flanek Steamer Pot 30cm", category: "kitchenware", price: 26500, image: "flanek-steamer-pot-30cm.jpg", badge: "", description: "Flanek 30cm steamer pot. Perfect for healthy steamed cooking.", stock: 9999, soldToday: 0 },
+    { id: 239, name: "10pcs Granite Pot Set", category: "kitchenware", price: 110000, image: "10pcs-granite-pot-set.jpg", badge: "", description: "10-piece premium granite pot set. Durable non-stick coating.", stock: 9999, soldToday: 0 },
+    { id: 240, name: "12 PCs Pot Set (Wine/Black/Blue)", category: "kitchenware", price: 72000, image: "12pcs-pot-set.jpg", badge: "", description: "12-piece pot set. Available in wine, black and blue colors.", stock: 9999, soldToday: 0 },
+    { id: 241, name: "18, 20, 22cm Pot Set", category: "kitchenware", price: 37000, image: "18-20-22cm-pot-set.jpg", badge: "", description: "3-piece pot set (18cm, 20cm, 22cm). Perfect sizes for everyday cooking.", stock: 9999, soldToday: 0 },
+
 ];
 
 const placeholderImage = "https://via.placeholder.com/300x180/f5f0f7/652e92?text=";
@@ -1035,6 +1044,26 @@ function showToast(msg) {
     toast.textContent = msg;
     toast.classList.add('show');
     setTimeout(() => toast.classList.remove('show'), 2500);
+}
+
+// ===== VIBRANTREVOLVE CONTACT POPUP FUNCTIONS =====
+function openDevContact() {
+    const overlay = document.getElementById('devContactOverlay');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeDevContact(event) {
+    if (event && event.target !== event.currentTarget) return;
+    const overlay = document.getElementById('devContactOverlay');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function closeDevContactDirect() {
+    const overlay = document.getElementById('devContactOverlay');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
 }
 
 // ===== INIT =====

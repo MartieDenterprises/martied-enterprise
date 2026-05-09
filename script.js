@@ -486,7 +486,6 @@ function finalizeOrder(method) {
     const state = document.getElementById('customerState').value.trim();
     const notes = document.getElementById('customerNotes').value.trim();
 
-    // Validate required fields
     if (!firstName || !lastName || !phone || !address || !city || !state) {
         alert('Please fill all required fields (*)');
         return;
@@ -514,7 +513,24 @@ function finalizeOrder(method) {
     message += `*Payment:* ${method === 'bank' ? 'Bank Transfer (Moniepoint)' : 'WhatsApp/OD'}\n`;
 
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/2348168140356?text=${encodedMessage}`, '_blank');
+    const waUrl = `https://wa.me/2348168140356?text=${encodedMessage}`;
+
+    // Try multiple methods to ensure it opens
+    const newWindow = window.open(waUrl, '_blank');
+    
+    // Fallback if popup was blocked
+    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+        // Create a temporary link and click it
+        const link = document.createElement('a');
+        link.href = waUrl;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        showToast('Opening WhatsApp... If nothing happens, please allow popups for this site.');
+    }
 
     cart = [];
     saveCart();

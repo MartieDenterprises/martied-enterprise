@@ -477,32 +477,44 @@ function copyAccount() {
 }
 
 function finalizeOrder(method) {
-    const name = document.getElementById('customerName').value.trim();
+    const firstName = document.getElementById('customerFirstName').value.trim();
+    const lastName = document.getElementById('customerLastName').value.trim();
     const phone = document.getElementById('customerPhone').value.trim();
+    const email = document.getElementById('customerEmail').value.trim();
     const address = document.getElementById('customerAddress').value.trim();
+    const city = document.getElementById('customerCity').value.trim();
+    const state = document.getElementById('customerState').value.trim();
+    const notes = document.getElementById('customerNotes').value.trim();
 
-    if (!name || !phone || !address) {
-        alert('Please fill all fields');
+    // Validate required fields
+    if (!firstName || !lastName || !phone || !address || !city || !state) {
+        alert('Please fill all required fields (*)');
         return;
     }
 
-    let message = `*ORDER - Martie-D*%0A%0A`;
-    message += `*Name:* ${name}%0A`;
-    message += `*Phone:* ${phone}%0A`;
-    message += `*Address:* ${address}%0A%0A`;
-    message += `*Items:*%0A`;
+    const fullName = `${firstName} ${lastName}`;
+    const fullAddress = `${address}, ${city}, ${state}`;
+
+    let message = `*ORDER - Martie-D*\n\n`;
+    message += `*Name:* ${fullName}\n`;
+    message += `*Phone:* ${phone}\n`;
+    if (email) message += `*Email:* ${email}\n`;
+    message += `*Address:* ${fullAddress}\n`;
+    if (notes) message += `*Notes:* ${notes}\n`;
+    message += `\n*Items:*\n`;
 
     let total = 0;
     cart.forEach(item => {
         const itemTotal = item.price * item.quantity;
         total += itemTotal;
-        message += `â€¢ ${item.name} x${item.quantity} = \u20A6${itemTotal.toLocaleString()}%0A`;
+        message += `• ${item.name} x${item.quantity} = ₦${itemTotal.toLocaleString()}\n`;
     });
 
-    message += `%0A*Total: \u20A6${total.toLocaleString()}*%0A`;
-    message += `*Payment:* ${method === 'bank' ? 'Bank Transfer (Moniepoint)' : 'WhatsApp/OD'}%0A`;
+    message += `\n*Total: ₦${total.toLocaleString()}*\n`;
+    message += `*Payment:* ${method === 'bank' ? 'Bank Transfer (Moniepoint)' : 'WhatsApp/OD'}\n`;
 
-    window.open(`https://wa.me/2348168140356?text=${message}`, '_blank');
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/2348168140356?text=${encodedMessage}`, '_blank');
 
     cart = [];
     saveCart();

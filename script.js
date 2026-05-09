@@ -253,7 +253,19 @@ let products = [
     { id: 239, name: "10pcs Granite Pot Set", category: "kitchenware", price: 110000, image: "10pcs-granite-pot-set.jpg", badge: "", description: "10-piece premium granite pot set. Durable non-stick coating.", stock: 9999, soldToday: 0 },
     { id: 240, name: "12 PCs Pot Set (Wine/Black/Blue)", category: "kitchenware", price: 72000, image: "12pcs-pot-set.jpg", badge: "", description: "12-piece pot set. Available in wine, black and blue colors.", stock: 9999, soldToday: 0 },
     { id: 241, name: "18, 20, 22cm Pot Set", category: "kitchenware", price: 37000, image: "18-20-22cm-pot-set.jpg", badge: "", description: "3-piece pot set (18cm, 20cm, 22cm). Perfect sizes for everyday cooking.", stock: 9999, soldToday: 0 },
-
+    { id: 242, name: "Hand Mixer with Rotating Bowl", category: "kitchenware", price: 49000, image: "hand-mixer-rotating-bowl.jpg", badge: "new", description: "Hand mixer with rotating bowl. Powerful mixing performance.", stock: 9999, soldToday: 0 },
+    { id: 243, name: "High Quality Stainless Steel Pot", category: "kitchenware", price: 105000, image: "stainless-steel-pot.jpg", badge: "new", description: "High quality stainless steel pot. Durable and long-lasting.", stock: 9999, soldToday: 0 },
+    { id: 244, name: "Sokany 02042 8-in-1 Mixer", category: "kitchenware", price: 38500, image: "sokany-02042-8in1-mixer.jpg", badge: "new", description: "Sokany 02042 8-in-1 multi-function mixer. Professional kitchen tool.", stock: 9999, soldToday: 0 },
+    { id: 245, name: "Hoffner Nonstick 601 Pot Set (20, 22, 24cm)", category: "kitchenware", price: 37000, image: "hoffner-nonstick-601.jpg", badge: "hot", description: "Hoffner Nonstick 601 pot set. Sizes: 20cm, 22cm, 24cm. Biggest bang is back with an improvement!", stock: 9999, soldToday: 0 },
+    { id: 246, name: "801 Hoffner Nonstick Pot Set (20, 22, 24 + 24cm)", category: "kitchenware", price: 45000, image: "hoffner-nonstick-801.jpg", badge: "bestseller", description: "801 Hoffner Nonstick pot set. Best selling set is back with a good improvement! Sizes: 20cm, 22cm, 24cm + 24cm.", stock: 9999, soldToday: 0 },
+    { id: 247, name: "Fry Pan", category: "kitchenware", price: 8000, image: "fry-pan.jpg", badge: "new", description: "Quality fry pan. Perfect for everyday cooking.", stock: 9999, soldToday: 0 },
+    { id: 248, name: "Mini Handheld Fan", category: "gadgets", price: 4500, image: "mini-handheld-fan.jpg", badge: "new", description: "Portable mini handheld fan. Rechargeable and compact.", stock: 9999, soldToday: 0 },
+    { id: 249, name: "Taigexin Hand Fan", category: "gadgets", price: 4500, image: "taigexin-hand-fan.jpg", badge: "new", description: "Taigexin hand fan. Reliable cooling on the go.", stock: 9999, soldToday: 0 },
+    { id: 250, name: "Wooden Power Bank 10000mAh", category: "gadgets", price: 12000, image: "wooden-powerbank.jpg", badge: "new", description: "Wooden power bank 10000mAh. Stylish and reliable. Available also in bulk.", stock: 9999, soldToday: 0 },
+    { id: 251, name: "Ice Cream Cup", category: "kitchenware", price: 4500, image: "ice-cream-cup.jpg", badge: "new", description: "Ice cream cup. Perfect for desserts and parties.", stock: 9999, soldToday: 0 },
+    { id: 252, name: "Cups (Per Dozen)", category: "kitchenware", price: 7000, image: "cups-dozen.jpg", badge: "new", description: "Cups set. N7,000 per dozen. Great for home and events.", stock: 9999, soldToday: 0 },
+    { id: 253, name: "Children Cup (Per Dozen)", category: "kitchenware", price: 6500, image: "children-cup-dozen.jpg", badge: "new", description: "Children cups for parties. N6,500 per dozen. Colorful and durable.", stock: 9999, soldToday: 0 },
+    { id: 254, name: "Children Plate (Per Dozen)", category: "kitchenware", price: 3000, image: "children-plate-dozen.jpg", badge: "new", description: "Children plates for parties. N3,000 per dozen. Fun designs for kids.", stock: 9999, soldToday: 0 },
 ];
 
 const placeholderImage = "https://via.placeholder.com/300x180/f5f0f7/652e92?text=";

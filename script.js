@@ -264,8 +264,17 @@ let products = [
     { id: 250, name: "Wooden Power Bank 10000mAh", category: "gadgets", price: 12000, image: "wooden-powerbank.jpg", badge: "new", description: "Wooden power bank 10000mAh. Stylish and reliable. Available also in bulk.", stock: 9999, soldToday: 0 },
     { id: 251, name: "Ice Cream Cup", category: "kitchenware", price: 4500, image: "ice-cream-cup.jpg", badge: "new", description: "Ice cream cup. Perfect for desserts and parties.", stock: 9999, soldToday: 0 },
     { id: 252, name: "Cups (Per Dozen)", category: "kitchenware", price: 7000, image: "cups-dozen.jpg", badge: "new", description: "Cups set. N7,000 per dozen. Great for home and events.", stock: 9999, soldToday: 0 },
-    { id: 253, name: "Children Cup (Per Dozen)", category: "kitchenware", price: 6500, image: "children-cup-dozen.jpg", badge: "new", description: "Children cups for parties. N6,500 per dozen. Colorful and durable.", stock: 9999, soldToday: 0 },
+    { id: 253, name: "Children Cup (Per Dozen)", category: "kitchenware", price: 6500, image: "children-cup-dozen.jpg", badge: "new", description: "Children cups for parties. N6,500 per dozen. Colorful and durable.", stock: 9999, soldToday: 10 },
     { id: 254, name: "Children Plate (Per Dozen)", category: "kitchenware", price: 3000, image: "children-plate-dozen.jpg", badge: "new", description: "Children plates for parties. N3,000 per dozen. Fun designs for kids.", stock: 9999, soldToday: 0 },
+    { id: 255, name: "Big 2 in 1 Nova Straightener", category: "personal", price: 5500, image: "big-2in1-nova-straightener.jpg", badge: "new", description: "Big 2-in-1 Nova hair straightener. Professional styling tool.", stock: 9999, soldToday: 0 },
+    { id: 256, name: "1800 Watts Nova Dryer", category: "personal", price: 5500, image: "1800w-nova-dryer.jpg", badge: "new", description: "1800 watts Nova hair dryer. Powerful and reliable.", stock: 9999, soldToday: 0 },
+    { id: 257, name: "2000 Watts Nova Dryer", category: "personal", price: 6000, image: "2000w-nova-dryer.jpg", badge: "new", description: "2000 watts Nova hair dryer. Extra power for faster drying.", stock: 9999, soldToday: 0 },
+    { id: 258, name: "RAF Electric Iron", category: "household", price: 11000, image: "raf-electric-iron.jpg", badge: "new", description: "RAF electric iron. Smooth glide, wrinkle-free results.", stock: 9999, soldToday: 0 },
+    { id: 259, name: "F-11-2 Wireless Microphone", category: "gadgets", price: 13500, image: "f11-2-wireless-microphone.jpg", badge: "new", description: "F-11-2 wireless microphone. Clear sound, no cables.", stock: 9999, soldToday: 0 },
+    { id: 260, name: "RAF Sound Proof Blender", category: "kitchenware", price: 190000, image: "raf-soundproof-blender.jpg", badge: "new", description: "RAF sound proof blender. Quiet operation, professional grade.", stock: 9999, soldToday: 0 },
+    { id: 261, name: "Rotable Storage Rack", category: "household", price: 6000, image: "rotable-storage-rack.jpg", badge: "new", description: "Rotable storage rack. 360° rotating organizer for easy access.", stock: 9999, soldToday: 0 },
+    { id: 262, name: "Mini Speaker", category: "gadgets", price: 8000, image: "mini-speaker.jpg", badge: "new", description: "Portable mini speaker. Big sound in a compact size.", stock: 9999, soldToday: 0 },
+    { id: 263, name: "Knee Support", category: "personal", price: 2500, image: "knee-support-2.jpg", badge: "new", description: "Elastic knee support brace. Provides compression and stability.", stock: 9999, soldToday: 60 },
 ];
 
 const placeholderImage = "https://via.placeholder.com/300x180/f5f0f7/652e92?text=";
